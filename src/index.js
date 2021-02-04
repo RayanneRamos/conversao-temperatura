@@ -23,3 +23,11 @@ function tryConvert(temperature, convert) {
   const rounded = Math.round(output * 1000) / 1000;
   return rounded.toString();
 }
+
+function BoilingVerdict(props) {
+  if(props.celsius >= 100) {
+    return <p>The water would boil.</p>
+  } else {
+    return <p>The water would not boil.</p>
+  }
+}
